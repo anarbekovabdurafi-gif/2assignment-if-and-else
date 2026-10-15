@@ -1,0 +1,10 @@
+k, m, n = map(int, input().split())
+
+if n <= k:
+    t = 2 * m
+elif n <= 2 * k:
+    t = 3 * m
+else:
+    t = ((2 * n + k - 1) // k) * m
+
+print(t)
