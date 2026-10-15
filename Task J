@@ -1,0 +1,11 @@
+a, b, c, d = map(int, input().split())
+
+price = a * 100 + b
+paid = c * 100 + d
+
+change = paid - price
+
+e = change // 100
+f = change % 100
+
+print(e, f)
